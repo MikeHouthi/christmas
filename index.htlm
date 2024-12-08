@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('christmas-bg.jpg') no-repeat center center/cover;
+      text-align: center;
+      color: white;
+    }
+    #card {
+      margin-top: 50px;
+      display: none;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Merry Christmas!</h1>
+  <p>Enter your friend's name to send a personalized greeting:</p>
+  <input type="text" id="friendName" placeholder="Enter name">
+  <button onclick="showCard()">Send</button>
+
+  <div id="card">
+    <h2 id="greeting"></h2>
+    <p>🎄 Wishing you joy, peace, and happiness this Christmas! 🎅</p>
+    <audio id="jingle" src="jingle-bells.mp3" autoplay></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
